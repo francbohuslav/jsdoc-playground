@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES2015",
+    "checkJs": true,
+    // For dynamic imports
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    // For import JSON modules
+    "resolveJsonModule": true,
+    // Do not generate result files, only check syntaxe
+    "noEmit": true
+  },
+  "include": ["src"]
+}
