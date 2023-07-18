@@ -26,3 +26,5 @@ dog.countOfLegs = 4;
 const dog2 = {};
 dog2.countOfLegs = 4;
 dog2.bark();
+
+export {};
