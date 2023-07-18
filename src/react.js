@@ -1,10 +1,15 @@
+// Component without nested content
+
 /**
  * @typedef {Object} UserComponent$Props
  * @property {string} name
  * @property {number} age
  */
 
-/** @type {function(UserComponent$Props):any} */ // "any" can be replaced by import("react").ReactElement
+/**
+ * @param {UserComponent$Props} props
+ * @return {React.ReactElement}
+ */
 function UserComponent(props) {
   return (
     <div>
@@ -13,12 +18,17 @@ function UserComponent(props) {
   );
 }
 
+// Component with children
+
 /**
  * @typedef {Object} SomeComponentWithContent$Props
- * @property {import("react").ReactElement} children
+ * @property {any} [optionalSomeThing]
  */
 
-/** @type {function(SomeComponentWithContent$Props):any} */
+/**
+ * @param {React.PropsWithChildren<SomeComponentWithContent$Props>} props
+ * @return {React.ReactElement}
+ */
 function SomeComponentWithContent(props) {
   return <div>Content: {props.children}</div>;
 }
