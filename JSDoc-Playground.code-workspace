@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "js/ts.implicitProjectConfig.checkJs": true
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "npm",
+        "script": "verify",
+        "problemMatcher": [],
+        "label": "Verify"
+      }
+    ]
+  }
+}
