@@ -1,5 +1,5 @@
 {
-  "name": "jsdocexamples",
+  "name": "jsdoc-playground",
   "version": "1.0.0",
   "scripts": {
     "verify": "tsc -p jsconfig.json"
